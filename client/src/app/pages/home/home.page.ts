@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { AuthenticationService } from 'src/app/services';
+import { AuthenticationService, UserService } from 'src/app/services';
+import { first } from 'rxjs/operators';
+import { User } from 'src/app/models';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +10,16 @@ import { AuthenticationService } from 'src/app/services';
 })
 export class HomePage {
 
-  constructor(private authenticationService: AuthenticationService) {}
+  constructor(private authenticationService: AuthenticationService, private userService: UserService) {}
+  users: User[];
+
+
+  ngOnInit() {
+    
+    this.userService.getAll().pipe(first()).subscribe(users => {
+        this.users = users;
+    });
+}
 
   logout(){
     this.authenticationService.logout();
