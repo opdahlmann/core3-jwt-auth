@@ -19,8 +19,78 @@
 @import '~@ionic/angular/css/display.css';
 
 /* Optional CSS utils that can be commented out */
-@import "~@ionic/angular/css/padding.css";
-@import "~@ionic/angular/css/float-elements.css";
-@import "~@ionic/angular/css/text-alignment.css";
-@import "~@ionic/angular/css/text-transformation.css";
-@import "~@ionic/angular/css/flex-utils.css";
+// @import "~@ionic/angular/css/padding.css";
+// @import "~@ionic/angular/css/float-elements.css";
+// @import "~@ionic/angular/css/text-alignment.css";
+// @import "~@ionic/angular/css/text-transformation.css";
+// @import "~@ionic/angular/css/flex-utils.css";
+
+
+ //Input fields
+
+ .input-field {
+    color: var(--graydark);
+    background-color:var(--white); // #606a7f;;
+    width: 100%;
+    padding: 9px; //15px;
+    outline: none;
+    border: 1px solid var(--graylight);
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  .input-field:focus {
+    border: 1px solid var(--graymedium);
+  }
+  .input-field::-webkit-input-placeholder {
+    color: var(--graylight);
+   }
+
+
+   .inputspacer10{
+    margin-bottom: 10px;
+   }
+
+
+   // dropdown
+
+   .dropbox {
+    color: var(--graydark);
+    background-color: var(--white); // #606a7f;
+    width: 100%;
+    padding: 7px; //15px;
+    outline: none;
+    border: 1px solid var(--inputfieldborder); // white;
+    color: var(--inputfieldborder);
+    border-radius: 3px;
+    font-size: 14px;
+  }
+
+  select:focus option.holder {
+    color: var(--graylight);
+  }
+
+
+  // button
+
+  .button1 {
+    background-color:var(--graydark);
+    border: none;
+    color: white;
+    padding: 13px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+
+  .button1 {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  
+  .button1:hover {
+    background-color: var(--graymedium);
+    color: white;
+  }

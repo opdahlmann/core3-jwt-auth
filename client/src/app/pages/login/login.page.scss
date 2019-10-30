@@ -1,0 +1,114 @@
+.buttons{
+    display: flex;
+  
+  }
+  .menuitem{
+    margin-left:20px;
+    color:white;
+    font-size: 13px;
+    margin-top:12px;
+    font-weight: 400;
+  }
+  .menuitem:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .content-wrapper{
+    margin:20px;
+    width: 100%;
+    flex:1;
+  }
+  .search-wrapper{
+    margin-bottom: 30px;
+    display: flex;
+    width: 100%;
+  }
+  
+  .reset-wrapper{
+    flex:1;
+  }
+  .input-wrapper{
+    float: right;
+    width:300px;
+  }
+  
+  .rb{
+    padding:10px;
+    width:150px;
+  }
+  
+  
+  .wrapper{
+    display: flex;
+    width:100%;
+  }
+  .wrapper-left{
+    width:200px !important;
+    background-color:#3C3C3C;
+    height:100%;
+    min-height:2000px;
+  }
+
+  .logincontainer{
+    border: 1px solid var(--graylight);
+    border-radius: 5px;
+    width:500px;
+    height:380px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top:60px;
+  }
+
+  //Form items
+
+  .formwelcomwtext{
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--blue);
+    margin-top:40px;
+  }
+  
+  .formwelcomsub{
+    font-size: 14px;
+    color: var(--graylight);
+    margin-top:8px;
+  }
+
+  .formsignuplink{
+    text-align: center;
+    margin-top:14px;
+    font-size: 16px;
+    color: var(--blue);
+    text-decoration: underline;
+  }
+  
+  .formsignuplink:hover{
+    cursor: pointer;
+    color: var(--graymedium);
+  }
+
+  // utils
+
+  .marginwrapper30{
+    margin:30px;
+  }
+
+  .spacertop30{
+    padding-top:30px;
+  }
+  .spacertop60{
+    padding-top:60px;
+  }
+
+  .hr-line-full{
+    width: 100%;
+    height:1px;
+    background-color: var(--graylight3);
+  }
+
+  .log{
+      margin-left:50px;
+      font-size: 12px;
+  }
+
