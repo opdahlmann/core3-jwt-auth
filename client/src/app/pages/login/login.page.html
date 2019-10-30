@@ -1,0 +1,36 @@
+<ion-content>
+<div class="wrapper">
+    <div class="wrapper-left">
+         <br>
+         <div class="menuitem" (click)="gotoHome()">Home</div>
+        
+    </div>
+ 
+     <div class="content-wrapper">
+                <div class="logincontainer">
+                    <div class="marginwrapper30">
+                    <div class="formwelcomwtext">Sign in</div>
+                    <div class="formwelcomsub">email: test@test.com, password: test</div>
+                    <br><br>
+                    <form [formGroup]="loginForm">
+                        <div class="textbox">
+                        <input type="text" class="input-field inputspacer10" formControlName="username" placeholder="Email"/>
+                        </div>
+                        <div class="textbox">
+                        <input type="password" class="input-field inputspacer10" formControlName="password" placeholder="Password"/>
+                        </div>
+                        <div class="textbox">
+                        <button class="button1 buttonpushright" (click)="onSubmit()">SIGN IN</button>
+                        </div>
+                        <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+                    </form>
+                    </div>
+                </div>
+                <br><br>
+                <div class="log" *ngFor="let item of log">
+                      {{item.message}}
+                </div>
+        <!-- <pre>{{log}}</pre> -->
+     </div> 
+  </div>
+</ion-content>
